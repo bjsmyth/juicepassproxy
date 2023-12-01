@@ -9,7 +9,7 @@ ENV UPDATE_UDPC=false
 RUN pip install --upgrade pip
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y git curl
-RUN git clone https://github.com/snicker/juicepassproxy.git /juicepassproxy
+RUN git clone https://github.com/bjsmyth/juicepassproxy.git /juicepassproxy
 RUN pip install --no-cache-dir -r /juicepassproxy/requirements.txt
 RUN chmod -f +x /juicepassproxy/*.sh
 
