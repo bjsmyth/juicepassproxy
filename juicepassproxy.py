@@ -361,7 +361,7 @@ class JuiceboxUDPCUpdater(object):
                     if update_required:
                         for id in udpc_streams_to_close:
                             logging.debug(f"Closing UDPC stream: {id}")
-                            tn.stream_close(id)
+                            #tn.stream_close(id)
                         tn.udpc(self.udpc_host, self.udpc_port)
                         tn.save()
                         logging.info("UDPC IP Saved")
